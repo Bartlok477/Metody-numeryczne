@@ -24,15 +24,9 @@ def zamiana_tablic(a,b):
      for i in range(n):
           for k in range(n):
                z[k][i]=a[k][i]
-
-     
      n=len(z)
-     
-     
      for j in range(n):
           z[j][n]=b[j]
-    
-     
      return z
      
 
@@ -40,21 +34,16 @@ def zerowanie(c):
      n=len(c)
      for i in range(0, n):
           maxEl = abs(c[i][i])
-          
-          
           maxRow = i
           for k in range(i+1, n):
                if abs(c[k][i]) > maxEl:
                      maxEl = abs(c[k][i])
                      maxRow = k
-
-             
           for k in range(i, n+1):
                  tmp = c[maxRow][k]
                  c[maxRow][k] = c[i][k]
                  c[i][k] = tmp
 
-             
           for k in range(i+1, n):
                d = -c[k][i]/c[i][i]
                for j in range(i, n+1):
