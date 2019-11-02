@@ -22,7 +22,7 @@ def potegowanie(a,b):
 
 def pierwiastkowanie(a,b):
      if(a<0 and b%2==0):
-          a=a*(-1)
+		a=a*(-1)
           c=pow(a,1/b)
           c=str(c)
           c=c+"j"
@@ -30,9 +30,9 @@ def pierwiastkowanie(a,b):
      else:
           c=pow(a,1/b)
           print("Pierwiastkowanie:",c)
-     
 
- 
+
+
 
 
 if __name__=="__main__":

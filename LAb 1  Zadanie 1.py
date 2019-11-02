@@ -18,5 +18,4 @@ ylabel('y');
 title('Plottingsin(x) & cos(x)');
 legend(('sin(x','cos(x)'));
 grid(True)
-grid
-
+show()
