@@ -17,7 +17,7 @@ def zerowanie(c):
      n=len(c)
      for i in range(0, n):
           maxEl = abs(c[i][i])
-          print(maxEl)
+          
           
           maxRow = i
           for k in range(i+1, n):
@@ -43,7 +43,7 @@ def zerowanie(c):
 def gauss(c):
      n=len(c)
      #tworzenie wyjsciowej tablicy 
-     x = [0 for i in range(n)]
+     x = np.zeros((3,1))
      #xn,xn-1,
      for i in range(n-1,-1,-1):
           x[i]=c[i][n]/c[i][i]
@@ -55,7 +55,7 @@ if(__name__=="__main__"):
      print("Macierz startowa= \n",c)
      zerowanie(c)
      print("Macierz po zerowaniu= \n",c)
-     print("Wynik= ",gauss(c))
+     print("Wynik=  \n",gauss(c))
      
      
                

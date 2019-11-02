@@ -18,7 +18,7 @@ def sprawdzenie(a):
 #^sprawdzenie czy macierz jest osobliwa
 def zamiana_tablic(a,b):
      n=len(a)
-     z=([[0 for col in range(n+1)] for row in range(n)])
+     z=np.zeros((3,4))
      #^generowanie tablicy z samymi zerami
      #Przeniesienie tablicy a do z
      for i in range(n):
@@ -59,7 +59,7 @@ def zerowanie(c):
 def gauss(c):
      n=len(c)
      #tworzenie wyjsciowej tablicy 
-     x =( [0 for i in range(n)])
+     x =np.zeros((3,1))
      #xn,xn-1,
      for i in range(n-1,-1,-1):
           x[i]=c[i][n]/c[i][i]
@@ -74,7 +74,7 @@ if(__name__=="__main__"):
           z=zamiana_tablic(a,b)
           
           zerowanie(z)
-          print("Wynik=", gauss(z))
+          print("Wynik= \n", gauss(z))
 
           
      elif(sprawdzenie(a)==False):

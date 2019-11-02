@@ -5,7 +5,7 @@ Created on Tue Oct 22 12:19:28 2019
 @author: ZUISA
 """
 
-from scipy import *
+import scipy
 from pylab import *
 x=r_[0:101]
 y01=sin(2*pi*x/100)
@@ -18,4 +18,5 @@ ylabel('y');
 title('Plottingsin(x) & cos(x)');
 legend(('sin(x','cos(x)'));
 grid(True)
+grid
 
