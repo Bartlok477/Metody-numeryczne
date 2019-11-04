@@ -8,16 +8,12 @@ a=np.array([[0,2,2],
 b=np.array([1,3,2])
 #^macierz wyników
 
-
-
 def sprawdzenie(a):
      if(np.linalg.det(a)==0):
           return False
      else:
           return True
 #^sprawdzenie czy macierz jest osobliwa
-
-
      
 def zamiana_tablic(a,b):
      n=len(a)
@@ -64,7 +60,6 @@ def gauss(c):
           for k in range(i-1, -1, -1):
             c[k][n] -= c[k][i] * x[i]
      return x
-
 
 if(__name__=="__main__"):
      if(sprawdzenie(a)==True):

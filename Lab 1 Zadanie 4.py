@@ -12,11 +12,11 @@ import numpy as np
 x=np.array([[ 2, 3],[1,1]])
 wyznacznik1=np.linalg.det(x)
 
-print(wyznacznik1)
+print("Wyznacznik nr 1 : \n",wyznacznik1)
 
 
 y=np.array([[ 2, 3,2],[1,4,3],[1,2,6]])
 
 wyznacznik2=np.linalg.det(y)
 
-print(wyznacznik2)
+print("Wyznacznik nr 1 : \n",wyznacznik2)
