@@ -70,8 +70,10 @@ def gauss(c):
 
 if(__name__=="__main__"):
      if(sprawdzenie(a)==True):
-          print("Macierz jest nieosobliwa ,trwa obliczanie")
+          
+          
           z=zamiana_tablic(a,b)
+          print("Macierz:\n",z ,"\n jest nieosobliwa ,trwa obliczanie:")
           
           zerowanie(z)
           print("Wynik= \n", gauss(z))
