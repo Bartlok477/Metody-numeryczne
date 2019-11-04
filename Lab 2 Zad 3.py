@@ -16,6 +16,9 @@ def sprawdzenie(a):
      else:
           return True
 #^sprawdzenie czy macierz jest osobliwa
+
+
+     
 def zamiana_tablic(a,b):
      n=len(a)
      z=np.zeros((3,4))
@@ -51,11 +54,6 @@ def zerowanie(c):
                          c[k][j] = 0
                     else:
                          c[k][j] += d * c[i][j]
-
-
-          
-          
-
 def gauss(c):
      n=len(c)
      #tworzenie wyjsciowej tablicy 
