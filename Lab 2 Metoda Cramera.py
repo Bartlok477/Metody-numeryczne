@@ -2,11 +2,12 @@ import numpy as np
 
 
 
-a=np.array([[10,40,70,300],
-           [20,50,80,360],
-           [30,60,80,390]])
+a=np.array([[1,1,1],
+           [8,6,4],
+           [15,5,3]])
+print(a)
 
-b=np.array([300,360,390])
+b=np.array([0,1,2])
 
 c=np.array(a)
 x=[]
