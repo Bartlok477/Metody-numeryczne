@@ -20,11 +20,15 @@ B = np.zeros((2, x.shape[1]))
 B[0, :] = x**0
 
 B[1, :] = x**1
+B=np.transpose(B)
+##
+##
+##a = np.dot(np.linalg.inv(np.dot(B,np.transpose(B))),np.dot(B,F))
+##P = a[0] + a[1]*x 
+##E = np.sum( (F - np.transpose(P))**2 ) 
+##print("P:",P)
+##print("E:",E)
+##print("B:",B)
 
 
-a = np.dot(np.linalg.inv(np.dot(B,np.transpose(B))),np.dot(B,F))
-P = a[0] + a[1]*x 
-E = np.sum( (F - np.transpose(P))**2 ) 
-print("P:",P)
-print("E:",E)
-print("B:",B)
+print(B)
