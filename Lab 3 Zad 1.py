@@ -30,15 +30,13 @@ def wykres():
 
 
 def main():
-     
      iter = 100
      print("Podaj dokładnosc:")
      delta=float(input())
-     print("Podaj przedział a: ")
-     a=float(input())
-     print("Podaj przedział b: ")
-     b=float(input())
-     
+     #print("Podaj przedział a: ")
+     #a=float(input())
+     #print("Podaj przedział b: ")
+     #b=float(input())
      bisekcja(delta, a,b,iter)
      
 
@@ -50,6 +48,5 @@ if(__name__=="__main__"):
           i+=1
           if(i>=5):
                wykres()
-               
                break
                
